@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Maqueta académica de una portada de cursos. No es el sitio oficial de U-Cursos." />
+  <title>Vicente Leyton · Mis cursos (maqueta)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="demo-strip">MAQUETA DE DISEÑO · SITIO NO OFICIAL · CURSOS DE EJEMPLO</div>
+  <header class="topbar">
+    <div class="header-inner">
+      <a href="./" class="wordmark" aria-label="Inicio de la maqueta"><span class="u">U</span><span class="dash">-</span><span class="courses">Cursos</span><small>inspiración visual</small></a>
+      <div class="top-right"><span class="dot"></span><span class="username">Vicente Leyton</span><span class="avatar">VL</span></div>
+    </div>
+  </header>
+  <div class="navline"><nav class="main-nav"><a class="selected" href="#cursos">Mis Cursos</a><a href="#periodos">Períodos</a><a href="#acerca">Acerca de esta maqueta</a></nav></div>
+  <main class="layout" id="cursos">
+    <aside class="sidebar">
+      <section class="profile"><div class="profile-icon">VL</div><div><div class="profile-label">PERFIL DE ESTUDIANTE</div><strong>Vicente Leyton</strong><small>Vista de cursos</small></div></section>
+      <h2>Mi espacio</h2>
+      <a class="side-link active" href="#cursos"><span class="side-icon">▦</span> Todos mis cursos</a>
+      <a class="side-link" href="#periodos"><span class="side-icon">▤</span> Cursos por período</a>
+      <div class="aside-note">Vista estática para ejercicio de diseño. Los enlaces no acceden a datos académicos reales.</div>
+    </aside>
+    <section class="content">
+      <div class="crumb">Inicio <span>›</span> Vicente Leyton <span>›</span> Todos los cursos</div>
+      <div class="title-row"><div><h1>Todos mis cursos</h1><p>Listado de asignaturas de Vicente Leyton</p></div><span class="counter" id="total">0 cursos</span></div>
+      <div class="toolbar"><label for="search">Buscar curso</label><input id="search" type="search" placeholder="Buscar por nombre o código…" /><label for="period">Período</label><select id="period"><option value="all">Todos los períodos</option></select></div>
+      <div class="section-heading" id="periodos"><span>Mis asignaturas</span><span class="column-label">Período</span></div>
+      <div id="courseList" class="course-list" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden>No se encontraron cursos con esos filtros.</div>
+      <footer id="acerca">Proyecto demostrativo independiente inspirado en una plataforma de cursos. No es un portal oficial ni certifica matrícula o inscripción.</footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
